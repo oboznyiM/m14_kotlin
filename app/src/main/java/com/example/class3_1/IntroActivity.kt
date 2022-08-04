@@ -18,7 +18,7 @@ class IntroActivity : AppCompatActivity() {
             findViewById<RecyclerView>(R.id.verticalRv).apply {
                 setHasFixedSize(true)
                 layoutManager = LinearLayoutManager(context)
-                adapter = ImagesAdapter(arrayOf("hi", "hello", "wow"))
+                adapter = ImagesAdapter(arrayOf("hi", "hello", "wow", "hoho", "heuehe"))
             }
         }
     }

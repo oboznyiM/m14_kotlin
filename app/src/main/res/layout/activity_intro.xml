@@ -8,14 +8,14 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/mainIm"
-        android:layout_width="match_parent"
-        android:layout_height="250dp"
-        android:layout_gravity="fill_horizontal"
-        android:adjustViewBounds="true"
-        android:src="@drawable/im"
-        android:contentDescription="TODO" />
+<!--    <ImageView-->
+<!--        android:id="@+id/mainIm"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="250dp"-->
+<!--        android:layout_gravity="fill_horizontal"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:src="@drawable/im"-->
+<!--        android:contentDescription="TODO" />-->
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
