@@ -1,0 +1,22 @@
+<resources>
+    <string name="todo">TODO</string>
+    <string name="app_name">class3-1</string>
+    <string name="main_camera">Camera</string>
+    <string name="main_camera_value">NIKON D3200</string>
+    <string name="main_aperture">Aperture</string>
+    <string name="main_aperture_value">f/5.0</string>
+    <string name="main_focal_length">Focal length</string>
+    <string name="main_focal_length_value">18.0mm</string>
+    <string name="main_shutter_speed">Shutter Speed</string>
+    <string name="main_shutter_speed_value">1/125s</string>
+    <string name="main_iso">ISO</string>
+    <string name="main_iso_value">100</string>
+    <string name="main_dimensions">Dimensions</string>
+    <string name="main_dimensions_value">3906 \u00D7 4882</string>
+    <string name="main_views">Views</string>
+    <string name="main_views_value">8.8M</string>
+    <string name="main_downloads">Downloads</string>
+    <string name="main_downloads_value">99.1K</string>
+    <string name="main_likes">Likes</string>
+    <string name="main_likes_value">1.8K</string>
+</resources>
