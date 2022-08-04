@@ -11,11 +11,17 @@
     <ImageView
         android:id="@+id/mainIm"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="250dp"
         android:layout_gravity="fill_horizontal"
         android:adjustViewBounds="true"
         android:src="@drawable/im"
         android:contentDescription="TODO" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/verticalRv"
+        android:scrollbars="horizontal" />
 
 </LinearLayout>
 

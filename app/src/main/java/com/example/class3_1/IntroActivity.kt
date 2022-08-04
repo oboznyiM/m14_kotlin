@@ -4,6 +4,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
 class IntroActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -13,6 +15,11 @@ class IntroActivity : AppCompatActivity() {
         findViewById<ImageView>(R.id.mainIm).setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+            findViewById<RecyclerView>(R.id.verticalRv).apply {
+                setHasFixedSize(true)
+                layoutManager = LinearLayoutManager(context)
+                adapter = ImagesAdapter(arrayOf("hi", "hello", "wow"))
+            }
         }
     }
 }
