@@ -15,6 +15,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import java.time.format.TextStyle
 
 class ComposeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,10 +29,13 @@ class ComposeActivity : AppCompatActivity() {
 
             ) {
                 Text(
-                    text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis lorem quis mauris aliquam mollis ut sed nisi. Praesent semper, ante ac blandit gravida, dui ligula euismod purus, eu varius nulla lectus non tellus. Quisque sed odio nec elit condimentum vulputate. Donec arcu massa, efficitur vitae vehicula a, pretium sit amet sapien.",
-                    color = Color.White,
-                    textAlign = TextAlign.Center,
-                    modifier = Modifier.width(200.dp)
+                    text = "This is a showcase app using Jetpack Compose with the Unsplash API",
+                    style = androidx.compose.ui.text.TextStyle(
+                        fontSize = 24.sp,
+                        textAlign = TextAlign.Center,
+                        color = Color.White
+                    ),
+                    modifier = Modifier.width(300.dp)
                 )
             }
         }
