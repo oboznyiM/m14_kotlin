@@ -12,14 +12,14 @@ class IntroActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_intro)
 
-        findViewById<ImageView>(R.id.mainIm).setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            findViewById<RecyclerView>(R.id.verticalRv).apply {
-                setHasFixedSize(true)
-                layoutManager = LinearLayoutManager(context)
-                adapter = ImagesAdapter(arrayOf("hi", "hello", "wow", "hoho", "heuehe"))
-            }
+//        findViewById<ImageView>(R.id.mainIm).setOnClickListener {
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+        findViewById<RecyclerView>(R.id.verticalRv).apply {
+            setHasFixedSize(true)
+            layoutManager = LinearLayoutManager(context)
+            adapter = ImagesAdapter(arrayOf("hi", "hello", "wow", "hoho", "heuehe"))
         }
+//        }
     }
 }
