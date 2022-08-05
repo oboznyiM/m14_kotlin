@@ -21,6 +21,11 @@
         <activity
             android:name=".IntroActivity"
             android:exported="true">
+        </activity>
+        <activity
+            android:name=".ComposeActivity"
+            android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
