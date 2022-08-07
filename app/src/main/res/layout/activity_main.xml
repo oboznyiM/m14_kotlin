@@ -96,8 +96,8 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
-        android:background="@android:color/darker_gray" />
+        android:layout_height="1dp"
+        android:background="@android:color/white" />
 
 
     <LinearLayout
@@ -255,7 +255,7 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="0.5dp"
+        android:layout_height="1dp"
         android:background="@android:color/white" />
 
     <LinearLayout
@@ -334,6 +334,32 @@
                 android:textSize="13sp"
                 android:text="@string/main_likes_value" />
         </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="barcelona"
+            android:textAllCaps="false"
+            android:backgroundTint="#3A3B3C"
+            android:padding="0dp"
+            android:layout_marginStart="5dp"
+            app:cornerRadius="20dp"
+            android:textSize="14sp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="spain"
+            android:textAllCaps="false"
+            android:backgroundTint="#3A3B3C"
+            android:padding="0dp"
+            android:layout_marginStart="15dp"
+            app:cornerRadius="20dp"
+            android:textSize="14sp"/>
     </LinearLayout>
 </LinearLayout>
 
