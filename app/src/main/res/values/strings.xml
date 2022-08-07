@@ -19,4 +19,6 @@
     <string name="main_downloads_value">99.1K</string>
     <string name="main_likes">Likes</string>
     <string name="main_likes_value">1.8K</string>
+    <string name="address">Barcelona, Spain</string>
+    <string name="name">Maksym Oboznyi</string>
 </resources>
