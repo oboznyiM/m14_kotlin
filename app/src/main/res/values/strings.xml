@@ -21,4 +21,6 @@
     <string name="main_likes_value">1.8K</string>
     <string name="address">Barcelona, Spain</string>
     <string name="name">Maksym Oboznyi</string>
+    <string name="main_country">spain</string>
+    <string name="main_city">barcelona</string>
 </resources>
