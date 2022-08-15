@@ -1,11 +1,9 @@
 package com.example.class3_1
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
@@ -21,24 +19,33 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.class3_1.data.AppPreferences
 
 class ComposeActivity : AppCompatActivity() {
+
+
+
     @Composable
-    fun Switch(isDarkTheme : MutableState<Boolean>) {
+    fun Switch(isDarkTheme : MutableState<Boolean>, options: AppPreferences) {
         val checkedState = remember { mutableStateOf(true) }
         Switch(
             checked = checkedState.value,
             onCheckedChange = {
                 checkedState.value = it
+
                 isDarkTheme.value = !isDarkTheme.value
+
+                options.setOption(it)
             }
         )
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val options = AppPreferences(this)
+
         setContent {
-            val isDarkTheme = remember { mutableStateOf(true) }
+            val isDarkTheme = remember { mutableStateOf(options.getOptions())}
             MaterialTheme(
                 colors = if (isDarkTheme.value) colorDarkPalette else colorLightPalette
             ) {
@@ -55,7 +62,7 @@ class ComposeActivity : AppCompatActivity() {
                         horizontalAlignment = Alignment.CenterHorizontally,
 
                         ) {
-                        Switch(isDarkTheme)
+                        Switch(isDarkTheme, options)
                         Text(
                             text = "This is a showcase app using Jetpack Compose with the Unsplash API",
                             style = androidx.compose.ui.text.TextStyle(
